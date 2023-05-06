@@ -9,7 +9,7 @@ To be placed in your `~/.bashrc` or `~/.zshrc`
 ```bash
 GREEN='\033[0;32m'
 NORMAL='\033[0;39m'
-gcap() { git add . && git commit -m "$*" && git push } # This is a helper function that is NEVER called
+gcap() { git commit -m "$*" && git push } # This is a helper function that is NEVER called
 gnew() { gcap "📦 NEW: $@" }
 gipr() { gcap "👌 IMPROVE: $@" }
 gfix() { gcap "🐛 FIX: $@" }
